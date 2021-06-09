@@ -1,0 +1,34 @@
+ERROR - 2021-06-09 15:24:25 --> Column 'first_name' cannot be null
+ERROR - 2021-06-09 15:25:59 --> Cannot add or update a child row: a foreign key constraint fails (`simplesheets`.`customer`, CONSTRAINT `customer_address` FOREIGN KEY (`shipment_address`) REFERENCES `address` (`address_id`) ON DELETE NO ACTION ON UPDATE CASCADE)
+CRITICAL - 2021-06-09 15:32:42 --> Unsupported operand types: bool | string
+#0 C:\xampp\htdocs\system\View\View.php(230): include()
+#1 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('customer/create...', Array, true)
+#3 C:\xampp\htdocs\app\Controllers\Customer.php(57): view('customer/create...')
+#4 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#5 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#6 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-09 15:55:44 --> Undefined variable $next_link
+#0 C:\xampp\htdocs\app\Views\templates\success_message.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 5)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('templates/succe...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Customer.php(52): view('templates/succe...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-09 15:57:37 --> Undefined variable $next_link
+#0 C:\xampp\htdocs\app\Views\templates\success_message.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 5)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('templates/succe...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Customer.php(52): view('templates/succe...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}

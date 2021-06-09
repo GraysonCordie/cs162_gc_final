@@ -1,0 +1,21 @@
+CRITICAL - 2021-06-08 22:03:16 --> Undefined property: App\Controllers\Employee::$empoloyeeModel
+#0 C:\xampp\htdocs\app\Controllers\Employee.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 108)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Employee->delete('2')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-08 22:05:12 --> Undefined property: App\Controllers\Employee::$empoloyeeModel
+#0 C:\xampp\htdocs\app\Controllers\Employee.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 108)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Employee->delete('3')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-08 22:06:35 --> Undefined property: App\Controllers\Employee::$empoloyeeModel
+#0 C:\xampp\htdocs\app\Controllers\Employee.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 108)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Employee->delete('1')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -8,9 +8,9 @@
             ."-". $employee->firstName 
             . " " . $employee->lastName
             . " | "
-            . "<a href='/employee/update/".$employee->id ."'><i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i></a>" 
-            . " <a href='/employee/delete/".$employee->id ."'><i class=\"fa fa-trash-o\" aria-hidden=\"true\"></i></a>"
-        );    
+            . "<a href='/employee/update/".$employee->id ."'><i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i></a>"
+            . " <a href='/employee/delete/".$employee->id ."'><i class=\"fa fa-trash-o\" aria-hidden=\"true\"></i></i></a>"
+        ); 
     ?>
 </div>
 <?php endforeach; ?>

@@ -42,16 +42,16 @@ class Employee extends BaseController
                     'departmentName' => $this->request->getPost('departmentName')
                 ]
             );
-            $data['message'] = $this->request->getPost('firstName') . ' was succesfully created.';
+            $data['message'] = $this->request->getPost('firstName') . ' was created successfully.';
             $data['callback_link'] = '/employee/create';
-            echo view('templates/success_message', $data);
-
-            //echo $this->request->getPost('firstName') . ' was succesfully created.';
+            echo view('templates/success_message.php', $data);
+            
+            //echo ($this->request->getPost('firstName') . ' was created successfully.');
         }
         else{
             echo view('employee/create.php');
         }
-
+        
         echo view('templates/footer.php');
     }
 
@@ -62,13 +62,13 @@ class Employee extends BaseController
         echo view('templates/header.php', $data);
 
         if(!$seg1) {
-            //reject navigation to this page
-            $data['message'] = 'An employee must be selected.';
+            //reject navigation to this page if an employee isn't selected
+            $data['message'] = "An employee must be selected.";
             $data['callback_link'] = "/employee";
             echo view('templates/error_message.php', $data);
         }
         else{
-            //If employee was selected, get in from db and send to update view
+            //if employee was selected, get it from db and send to update view
             if($this->request->getMethod() === 'post' && $this->validate([
                 'firstName' => 'required|min_length[3]|max_length[30]',
                 'lastName' => 'required|min_length[3]|max_length[30]',
@@ -83,12 +83,11 @@ class Employee extends BaseController
                         'departmentName' => $this->request->getPost('departmentName')
                     ]
                 );
-                echo ("Employee saved!");
+                echo ("Employee was saved!");
             } else {
                 $data['employee'] = $this->employeeModel->get_employee($seg1);
                 echo view('employee/update.php', $data);
             }
-
         }
 
         echo view('templates/footer.php');
@@ -98,7 +97,6 @@ class Employee extends BaseController
         $data['pageTitle'] = "Delete Employee";
 
         echo view('templates/header.php', $data);
-
         if(!$seg1){
             $data['message'] = "Please select a valid employee.";
             $data['callback_link'] = "/employee";
@@ -109,11 +107,11 @@ class Employee extends BaseController
             if($seg2 == 1){
                 $data['callback_link'] = "/employee";
                 if($this->employeeModel->delete($seg1)){
-                $data['message'] = "The employee has been deleted.";
-                echo view('templates/success_message.php', $data);
+                    $data['message'] = "The employee was successfully deleted.";
+                    echo view('templates/success_message.php', $data);
                 }
                 else{
-                    $data['message'] = "This employee could not be deleted.";
+                    $data['message'] = "The employee could not be deleted.";
                     echo view('templates/error_message.php', $data);
                 }
             }
@@ -124,7 +122,6 @@ class Employee extends BaseController
             }
             
         }
-
         echo view('templates/footer.php');
     }
 }

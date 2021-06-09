@@ -11,6 +11,7 @@ class EmployeeModel extends Model
     protected $db;
     protected $allowedFields = ['firstName', 'lastName', 'dob', 'departmentName'];
 
+
     //constructor
     public function __construct(){
         parent::__construct();

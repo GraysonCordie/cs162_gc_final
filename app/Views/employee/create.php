@@ -1,7 +1,7 @@
 <?= \Config\Services::validation()->listErrors() ?>
 <form name="new_employee" method="POST">
 <div class="w3-container">
-    <div class="w3-half" style="margin: 0 auto; width: 50%; border: 2px solid #000;">
+    <div class="w3-half" style="margin: 0 auto; border: 2px solid #000;">
         <div class="w3-section"><h3>Enter Employee Information</h3></div>
         <?php foreach($formFields as $field) :?>
             <?php if($field != 'id') : ?>

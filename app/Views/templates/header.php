@@ -13,7 +13,7 @@
   <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
   <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
   <a href="/employee" class="w3-bar-item w3-button">Employees <i class="fa fa-users" aria-hidden="true"></i></a>
-  <a href="/department" class="w3-bar-item w3-button">Department</a>
+  <a href="/department" class="w3-bar-item w3-button">Departments</a>
 </nav>
 
 <!-- Header -->
@@ -28,4 +28,4 @@
   </div>
 </header>
 
-<div class="w3-container w3-row"><?php echo $pageTitle; ?></div>
+<div class="w3-container w3-row"><h1><?php echo $pageTitle; ?></h1></div>

@@ -25,8 +25,9 @@ class Address extends BaseController
     }
 
     public function create($seg1 = false){
-        $data['pageTitle'] = "Create Address";
+        $data['pageTitle'] = "Create address";
         $data['formFields'] = $this->addressFields;
+        $data['custid'] = $seg1;
 
         echo view('templates/header.php', $data);
 
@@ -34,22 +35,23 @@ class Address extends BaseController
             'line1' => 'required|min_length[3]|max_length[50]',
             'line2' => 'required|min_length[3]|max_length[50]',
             'city' => 'required|min_length[3]|max_length[50]',
-            'state' => 'required|min_length[2]|max_length[2]',
+            'state' => 'required|max_length[2]',
             'zip' => 'required|min_length[5]|max_length[5]'
         ])){
-            $this->addressModel->save(
-                [
-                    'line1' => $this->request->getPost('line1'),
-                    'line2' => $this->request->getPost('line2'),
-                    'city' => $this->request->getPost('city'),
-                    'state' => $this->request->getPost('state'),
-                    'zip' => $this->request->getPost('zip'),
-                ]
-            );
-
             $line1 = $this->request->getPost('line1');
             $line2 = $this->request->getPost('line2');
             $zip = $this->request->getPost('zip');
+
+
+            $this->addressModel->save(
+                [
+                    'line1' => $line1,
+                    'line2' => $line2,
+                    'city' => $this->request->getPost('city'),
+                    'state' => $this->request->getPost('state'),
+                    'zip' => $zip,
+                ]
+            );
 
             $id = $this->addressModel->get_addressid($line1, $line2, $zip);
 
@@ -57,19 +59,19 @@ class Address extends BaseController
 
             $data['message'] = 'Address was created successfully. ID: ' . $id;
             $data['callback_link'] = '/address/create';
-            $data['next_link'] = '/order/create';
+            $data['next_link'] = '/order/create/' . $seg1;
             echo view('templates/success_message.php', $data);
             
             //echo ($this->request->getPost('firstName') . ' was created successfully.');
         }
         else{
-            echo view('address/create.php');
+            echo view('address/create.php', $data);
         }
         
         echo view('templates/footer.php');
     }
 
-    public function update($seg1 = false){
+    /* public function update($seg1 = false){
         $data['pageTitle'] = "Update Employee";
         $data['formFields'] = $this->customerFields;
 
@@ -137,5 +139,5 @@ class Address extends BaseController
             
         }
         echo view('templates/footer.php');
-    }
+    } */
 }

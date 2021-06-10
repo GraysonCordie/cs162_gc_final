@@ -65,7 +65,7 @@ class Customer extends BaseController
         echo view('templates/footer.php');
     }
 
-    public function update($seg1 = false){
+    /* public function update($seg1 = false){
         $data['pageTitle'] = "Update Employee";
         $data['formFields'] = $this->customerFields;
 
@@ -133,5 +133,5 @@ class Customer extends BaseController
             
         }
         echo view('templates/footer.php');
-    }
-}
+    } */
+} 

@@ -1,0 +1,187 @@
+CRITICAL - 2021-06-10 13:33:49 --> Undefined variable $employees
+#0 C:\xampp\htdocs\app\Views\customer\view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('customer/view.p...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Customer.php(23): view('customer/view.p...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->view()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-10 13:35:06 --> Undefined property: stdClass::$departmentName
+#0 C:\xampp\htdocs\app\Views\customer\view.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 6)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('customer/view.p...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Customer.php(23): view('customer/view.p...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->view()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-10 13:36:35 --> Undefined property: stdClass::$id
+#0 C:\xampp\htdocs\app\Views\customer\view.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 6)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('customer/view.p...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Customer.php(23): view('customer/view.p...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->view()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-10 13:36:46 --> Undefined property: stdClass::$cutomer_id
+#0 C:\xampp\htdocs\app\Views\customer\view.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 6)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('customer/view.p...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Customer.php(23): view('customer/view.p...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->view()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-10 13:37:00 --> Undefined property: stdClass::$firstName
+#0 C:\xampp\htdocs\app\Views\customer\view.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('customer/view.p...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Customer.php(23): view('customer/view.p...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->view()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-10 13:37:35 --> Undefined variable $email
+#0 C:\xampp\htdocs\app\Views\customer\view.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('customer/view.p...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Customer.php(23): view('customer/view.p...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->view()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-10 13:39:32 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\system\View\View.php(230): include()
+#1 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('customer/view.p...', Array, true)
+#3 C:\xampp\htdocs\app\Controllers\Customer.php(23): view('customer/view.p...', Array)
+#4 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->view()
+#5 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#6 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-10 14:45:59 --> Undefined variable $field
+#0 C:\xampp\htdocs\app\Views\order\create.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('order/create.ph...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Order.php(62): view('order/create.ph...')
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->create()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-10 14:50:02 --> Too few arguments to function App\Controllers\Order::create(), 0 passed in C:\xampp\htdocs\system\CodeIgniter.php on line 931 and exactly 1 expected
+#0 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->create()
+#1 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#2 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-10 14:54:22 --> Undefined property: App\Controllers\Order::$seg1
+#0 C:\xampp\htdocs\app\Controllers\Order.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-10 15:24:14 --> Call to undefined method App\Models\AddressModel::get_custid
+#0 C:\xampp\htdocs\app\Controllers\Address.php(52): CodeIgniter\Model->__call('get_custid', Array)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Address->create('41')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Address))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-10 15:27:43 --> Undefined constant "App\Controllers\Y"
+#0 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->create('14')
+#1 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#2 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-10 15:30:16 --> Undefined variable $custid
+#0 C:\xampp\htdocs\app\Views\order\create.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('order/create.ph...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Order.php(56): view('order/create.ph...')
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->create('14')
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-06-10 15:34:34 --> Cannot add or update a child row: a foreign key constraint fails (`simplesheets`.`orders`, CONSTRAINT `customer_relation` FOREIGN KEY (`customer_id`) REFERENCES `customer` (`customer_id`) ON UPDATE CASCADE)
+CRITICAL - 2021-06-10 15:34:34 --> Call to undefined method App\Models\OrderModel::get_custid
+#0 C:\xampp\htdocs\app\Controllers\Order.php(49): CodeIgniter\Model->__call('get_custid', Array)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->create('42')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-06-10 15:35:18 --> Cannot add or update a child row: a foreign key constraint fails (`simplesheets`.`orders`, CONSTRAINT `customer_relation` FOREIGN KEY (`customer_id`) REFERENCES `customer` (`customer_id`) ON UPDATE CASCADE)
+CRITICAL - 2021-06-10 15:35:18 --> Call to undefined method App\Models\OrderModel::get_custid
+#0 C:\xampp\htdocs\app\Controllers\Order.php(49): CodeIgniter\Model->__call('get_custid', Array)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->create('42')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-06-10 15:35:45 --> Cannot add or update a child row: a foreign key constraint fails (`simplesheets`.`orders`, CONSTRAINT `customer_relation` FOREIGN KEY (`customer_id`) REFERENCES `customer` (`customer_id`) ON UPDATE CASCADE)
+CRITICAL - 2021-06-10 15:35:45 --> Undefined array key 0
+#0 C:\xampp\htdocs\app\Models\OrderModel.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 54)
+#1 C:\xampp\htdocs\app\Controllers\Order.php(49): App\Models\OrderModel->get_orderid('42', '2021-06-10')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->create('42')
+#3 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#4 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-06-10 15:40:15 --> Cannot add or update a child row: a foreign key constraint fails (`simplesheets`.`orders`, CONSTRAINT `customer_relation` FOREIGN KEY (`customer_id`) REFERENCES `customer` (`customer_id`) ON UPDATE CASCADE)
+CRITICAL - 2021-06-10 15:40:15 --> Undefined array key 0
+#0 C:\xampp\htdocs\app\Models\OrderModel.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 51)
+#1 C:\xampp\htdocs\app\Controllers\Order.php(48): App\Models\OrderModel->get_orderid('42', '2021-06-10')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->create('42')
+#3 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#4 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-06-10 15:46:48 --> Cannot add or update a child row: a foreign key constraint fails (`simplesheets`.`orders`, CONSTRAINT `customer_relation` FOREIGN KEY (`customer_id`) REFERENCES `customer` (`customer_id`) ON UPDATE CASCADE)
+CRITICAL - 2021-06-10 15:46:48 --> Undefined array key 0
+#0 C:\xampp\htdocs\app\Models\OrderModel.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 51)
+#1 C:\xampp\htdocs\app\Controllers\Order.php(48): App\Models\OrderModel->get_orderid('42', '2021-06-10')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->create('42')
+#3 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#4 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-06-10 15:53:00 --> Cannot add or update a child row: a foreign key constraint fails (`simplesheets`.`orders`, CONSTRAINT `customer_relation` FOREIGN KEY (`customer_id`) REFERENCES `customer` (`customer_id`) ON UPDATE CASCADE)
+CRITICAL - 2021-06-10 15:53:00 --> Undefined array key 0
+#0 C:\xampp\htdocs\app\Models\OrderModel.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 51)
+#1 C:\xampp\htdocs\app\Controllers\Order.php(48): App\Models\OrderModel->get_orderid('43', '2021-06-10')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->create('43')
+#3 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#4 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 16:06:58 --> Undefined variable $next_link
+#0 C:\xampp\htdocs\app\Views\templates\success_message.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 5)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('templates/succe...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Order.php(55): view('templates/succe...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->create('43')
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}

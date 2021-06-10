@@ -25,7 +25,7 @@ class Order extends BaseController
     }
 
     public function create($seg1 = false){
-        $data['pageTitle'] = "Create order";
+        $data['pageTitle'] = "Create Order";
         $data['formFields'] = $this->orderFields;
         $data['custid'] = $seg1;
     
@@ -52,13 +52,16 @@ class Order extends BaseController
     
             $data['message'] = 'Order was created successfully. ID: ' . $id;
             $data['callback_link'] = '/order/create';
-            $data['next_link'] = '/order/create/' . $id;
+            $data['next_link'] = '/order_line/create/' . $id;
             echo view('templates/success_message.php', $data);
+
         }
         else{
             echo view('order/create.php', $data);
+
         }
         
         echo view('templates/footer.php');
     }
+
 } 

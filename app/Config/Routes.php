@@ -34,17 +34,11 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-$routes->add('employee', 'Employee::view');
-$routes->add('employee/(:num)', 'Employee::view/$1');
-$routes->add('employee/create', 'Employee::create');
-$routes->add('employee/update', 'Employee::update');
-$routes->add('employee/update/(:num)', 'Employee::update/$1');
-$routes->add('employee/delete', 'Employee::delete');
-$routes->add('employee/delete/(:num)', 'Employee::delete/$1/$2');
-$routes->add('employee/delete/(:num)/(:num)', 'Employee::delete/$1/$2');
 $routes->add('address/create/(:num)', 'Address::create/$1');
 $routes->add('order/create', 'Order::create');
 $routes->add('order/create/(:num)', 'Order::create/$1');
+$routes->add('orderline/create', 'OrderLine::create');
+$routes->add('orderline/create/(:num)', 'OrderLine::create/$1');
 
 
 /*

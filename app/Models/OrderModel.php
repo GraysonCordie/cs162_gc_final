@@ -18,17 +18,16 @@ class OrderModel extends Model
         $this->db = \Config\Database::connect();
     }
 
-    public function insert_order($order = array()){
+    public function create_orderline($orderid, $product){
+        $date = $this->get_order($orderid)[0]->order_date;
 
+        $sql = "INSERT INTO order_line (product_name, order_id, order_date) VALUES ('".$product."', '".$orderid."', '".$date."')";
+        $this->db->query($sql);
     }
 
-    public function delete_order($id = false){
-
-    }
-
-    public function update_order($order = array()){
-
-    }
+    /* public function get_orderdate($orderid){
+        $sql = "SELECT order_date FROM " . $this->table . 
+    } */
 
     public function get_order($id = false){
         if(!$id){
@@ -53,9 +52,9 @@ class OrderModel extends Model
     }
 
     public function set_order($orderid, $date){
-        $sql = "INSERT INTO orders (customer_id, order_date, order_status) VALUES ('".$orderid."', '".$date."', 'New')";
+        $sql = "INSERT INTO " . $this->table . " (customer_id, order_date, order_status) VALUES ('".$orderid."', '".$date."', 'New')";
         $this->db->query($sql);
-    }
+    } //Used as alternative to save()
 
     public function get_columnNames(){
         return $this->db->getFieldNames($this->table);

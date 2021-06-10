@@ -42,6 +42,7 @@ $routes->add('employee/update/(:num)', 'Employee::update/$1');
 $routes->add('employee/delete', 'Employee::delete');
 $routes->add('employee/delete/(:num)', 'Employee::delete/$1/$2');
 $routes->add('employee/delete/(:num)/(:num)', 'Employee::delete/$1/$2');
+$routes->add('address/create/(:num)', 'Address::create/$1');
 
 
 /*

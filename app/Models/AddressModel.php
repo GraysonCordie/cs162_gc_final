@@ -4,12 +4,12 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class CustomerModel extends Model
+class AddressModel extends Model
 {
     //attributes
-    protected $table = 'customer';
+    protected $table = 'address';
     protected $db;
-    protected $allowedFields = ['first_name', 'last_name', 'email', 'phone', 'dob', /*'shipment_address'*/];
+    protected $allowedFields = ['line1', 'line2', 'city', 'state', 'zip'];
 
 
     //constructor
@@ -18,19 +18,19 @@ class CustomerModel extends Model
         $this->db = \Config\Database::connect();
     }
 
-    public function insert_customer($customer = array()){
+    public function insert_address($address = array()){
 
     }
 
-    public function delete_customer($id = false){
+    public function delete_address($id = false){
 
     }
 
-    public function update_customer($customer = array()){
+    public function update_address($address = array()){
 
     }
 
-    public function get_customer($id = false){
+    public function get_address($id = false){
         if(!$id){
             //if $id is false get all employees
             $sql = "SELECT * FROM " . $this->table;
@@ -39,24 +39,29 @@ class CustomerModel extends Model
         }
         else{
             //otherwise get employee by id
-            $sql = "SELECT * FROM " . $this->table . " WHERE customer_id='".$id."'";
+            $sql = "SELECT * FROM " . $this->table . " WHERE address_id='".$id."'";
             $query = $this->db->query($sql);
             //SELECT * FROM employee WHERE id='1'
             return $query->getResult();
         }
     }
 
-    public function get_custid($email = false){
-        if(!$email){
+    public function get_addressid($line1, $line2, $zip){
+        if(!$line1){
             //do nothing?
         }
         else{
-            $sql = "SELECT * FROM " . $this->table . " WHERE email='".$email."'";
+            $sql = "SELECT * FROM " . $this->table . " WHERE line1='".$line1."' AND line2='".$line2."' AND zip='".$zip."'" ;
             $query = $this->db->query($sql);
-            $cust = $query->getResult();
-            $id = $cust[0]->customer_id;
+            $address = $query->getResult();
+            $id = $address[0]->address_id;
             return $id;
         }
+    }
+
+    public function connect_address($custId, $addressId){
+        $sql = "UPDATE customer SET shipment_address='$addressId' WHERE customer_id='$custId'";
+        $this->db->query($sql);
     }
 
     public function get_columnNames(){

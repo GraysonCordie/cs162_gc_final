@@ -32,3 +32,212 @@ CRITICAL - 2021-06-09 15:57:37 --> Undefined variable $next_link
 #7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2021-06-09 17:01:23 --> Array to string conversion
+#0 C:\xampp\htdocs\app\Controllers\Customer.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 53)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-09 17:02:52 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#1 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#2 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-09 17:04:17 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('customer/create')
+#1 C:\xampp\htdocs\system\CodeIgniter.php(812): CodeIgniter\Router\Router->handle('customer/create')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(392): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-09 17:04:59 --> Undefined variable $message
+#0 C:\xampp\htdocs\app\Views\templates\success_message.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('templates/succe...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Customer.php(56): view('templates/succe...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-09 17:08:00 --> Array to string conversion
+#0 C:\xampp\htdocs\app\Controllers\Customer.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 58)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-09 17:10:11 --> Array to string conversion
+#0 C:\xampp\htdocs\app\Controllers\Customer.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 54)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-09 17:13:10 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#1 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#2 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-09 17:17:23 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, customer_id given
+#0 C:\xampp\htdocs\system\Database\MySQLi\Result.php(174): mysqli_result->fetch_object('customer_id')
+#1 C:\xampp\htdocs\system\Database\BaseResult.php(167): CodeIgniter\Database\MySQLi\Result->fetchObject('customer_id')
+#2 C:\xampp\htdocs\system\Database\BaseResult.php(114): CodeIgniter\Database\BaseResult->getCustomResultObject('customer_id')
+#3 C:\xampp\htdocs\app\Models\CustomerModel.php(56): CodeIgniter\Database\BaseResult->getResult('customer_id')
+#4 C:\xampp\htdocs\app\Controllers\Customer.php(52): App\Models\CustomerModel->get_custid('graysoncordie@g...')
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-09 17:17:51 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, customer_id given
+#0 C:\xampp\htdocs\system\Database\MySQLi\Result.php(174): mysqli_result->fetch_object('customer_id')
+#1 C:\xampp\htdocs\system\Database\BaseResult.php(167): CodeIgniter\Database\MySQLi\Result->fetchObject('customer_id')
+#2 C:\xampp\htdocs\system\Database\BaseResult.php(114): CodeIgniter\Database\BaseResult->getCustomResultObject('customer_id')
+#3 C:\xampp\htdocs\app\Models\CustomerModel.php(56): CodeIgniter\Database\BaseResult->getResult('customer_id')
+#4 C:\xampp\htdocs\app\Controllers\Customer.php(52): App\Models\CustomerModel->get_custid('graysoncordie@g...')
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-09 17:18:29 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, customer_id given
+#0 C:\xampp\htdocs\system\Database\MySQLi\Result.php(174): mysqli_result->fetch_object('customer_id')
+#1 C:\xampp\htdocs\system\Database\BaseResult.php(167): CodeIgniter\Database\MySQLi\Result->fetchObject('customer_id')
+#2 C:\xampp\htdocs\system\Database\BaseResult.php(114): CodeIgniter\Database\BaseResult->getCustomResultObject('customer_id')
+#3 C:\xampp\htdocs\app\Models\CustomerModel.php(56): CodeIgniter\Database\BaseResult->getResult('customer_id')
+#4 C:\xampp\htdocs\app\Controllers\Customer.php(52): App\Models\CustomerModel->get_custid('graysoncordie@g...')
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-09 17:21:06 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#1 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#2 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-09 17:23:41 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\app\Controllers\Customer.php(52): implode(Array)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-09 17:25:19 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\app\Controllers\Customer.php(54): implode(Array)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-09 17:29:16 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\app\Controllers\Customer.php(59): implode(Array)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-09 17:30:19 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\app\Controllers\Customer.php(53): implode('', Array)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-09 17:30:48 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\app\Controllers\Customer.php(53): implode('', Array)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-09 17:31:00 --> implode(): Argument #2 ($array) must be of type ?array, stdClass given
+#0 C:\xampp\htdocs\app\Controllers\Customer.php(53): implode('', Object(stdClass))
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-09 17:32:22 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\app\Controllers\Customer.php(53): implode('', Array)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-09 17:32:49 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\app\Controllers\Customer.php(53): implode(' ', Array)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Customer->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-09 18:36:05 --> Attempt to read property "line1" on array
+#0 C:\xampp\htdocs\app\Models\AddressModel.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 54)
+#1 C:\xampp\htdocs\app\Controllers\Address.php(51): App\Models\AddressModel->get_addressid(Array)
+#2 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Address->create()
+#3 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Address))
+#4 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-09 18:37:49 --> Call to a member function getField() on array
+#0 C:\xampp\htdocs\app\Controllers\Address.php(51): App\Models\AddressModel->get_addressid(Array)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Address->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Address))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-09 18:39:13 --> Array to string conversion
+#0 C:\xampp\htdocs\app\Controllers\Address.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Address->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Address))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-09 18:39:49 --> Call to a member function getField() on array
+#0 C:\xampp\htdocs\app\Controllers\Address.php(54): App\Models\AddressModel->get_addressid(Array)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Address->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Address))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-06-09 18:42:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' line2='fdsjtjf', zip='97031'' at line 1
+CRITICAL - 2021-06-09 18:42:05 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\app\Controllers\Address.php(55): App\Models\AddressModel->get_addressid('ipudnfdsf', 'fdsjtjf', '97031')
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Address->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Address))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-06-09 18:43:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' line2='fdsjtjf', zip='97031'' at line 1
+CRITICAL - 2021-06-09 18:43:30 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\app\Controllers\Address.php(55): App\Models\AddressModel->get_addressid('ipudnfdsf', 'fdsjtjf', '97031')
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Address->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Address))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-06-09 18:44:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' line2='fdsjtjf', zip='97031'' at line 1
+CRITICAL - 2021-06-09 18:44:42 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\app\Controllers\Address.php(55): App\Models\AddressModel->get_addressid('ipudnfdsf', 'fdsjtjf', '97031')
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Address->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Address))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-06-09 18:50:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' line2='summitview', zip='97031'' at line 1
+CRITICAL - 2021-06-09 18:50:52 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\app\Controllers\Address.php(55): App\Models\AddressModel->get_addressid('4010', 'summitview', '97031')
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Address->create()
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Address))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-06-09 19:15:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''customer' WHERE customer_id='37' ('shipment_address') VALUES ('[12]')' at line 1
+ERROR - 2021-06-09 19:18:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE customer_id='38' (shipment_address) VALUES ('13')' at line 1

@@ -25,9 +25,6 @@ class OrderModel extends Model
         $this->db->query($sql);
     }
 
-    /* public function get_orderdate($orderid){
-        $sql = "SELECT order_date FROM " . $this->table . 
-    } */
 
     public function get_order($id = false){
         if(!$id){
@@ -58,5 +55,10 @@ class OrderModel extends Model
 
     public function get_columnNames(){
         return $this->db->getFieldNames($this->table);
+    }
+
+    public function update_status($orderId, $status){
+        $sql = "UPDATE ".$this->table." SET order_status='$status' WHERE order_id='$orderId'";
+        $this->db->query($sql);
     }
 }

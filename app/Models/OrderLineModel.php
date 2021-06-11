@@ -25,4 +25,11 @@ class OrderLineModel extends OrderModel
         $this->db->query($sql);
     }
 
+    public function list_products(){
+        $sql = "SELECT * FROM product";
+        $query = $this->db->query($sql);
+        $products = $query->getResult();
+        return $products;
+    }
+
 }

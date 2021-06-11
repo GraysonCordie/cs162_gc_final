@@ -7,7 +7,6 @@ class Order extends BaseController
 {
     private $orderModel;
     private $orderFields;
-    //$data['orderFields'] = $orderFields; <- used for passing into a view
     
     public function __construct(){
         $this->orderModel = new OrderModel();
@@ -52,7 +51,7 @@ class Order extends BaseController
     
             $data['message'] = 'Order was created successfully. ID: ' . $id;
             $data['callback_link'] = '/order/create';
-            $data['next_link'] = '/order_line/create/' . $id;
+            $data['next_link'] = '/orderline/create/' . $id;
             echo view('templates/success_message.php', $data);
 
         }
@@ -61,6 +60,33 @@ class Order extends BaseController
 
         }
         
+        echo view('templates/footer.php');
+    }
+
+    public function updateStatus($seg1 = false){
+        $data['pageTitle'] = 'Update Order Status';
+        $order = $this->orderModel->get_order($seg1);
+        $data['order'] = $order;
+
+        echo view('templates/header.php', $data);
+
+        if($this->request->getMethod() === 'post' && $this->validate([
+            'order_status' => 'required'
+        ])){
+            $newStatus = $this->request->getPost('order_status');
+
+            $this->orderModel->update_status($seg1, $newStatus);
+
+            $data['message'] = "Order status has been updated to ". $newStatus;
+            $data['callback_link'] = '/order/updateStatus/'. $seg1;
+            $data['next_link'] = '/order/view';
+            echo view('templates/success_message.php', $data);
+
+        }
+        else{
+            echo view('order/update_status.php', $data);
+        }
+
         echo view('templates/footer.php');
     }
 

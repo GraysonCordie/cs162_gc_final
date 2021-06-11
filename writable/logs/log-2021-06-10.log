@@ -208,3 +208,98 @@ CRITICAL - 2021-06-10 17:41:36 --> Call to undefined method App\Models\OrderLine
 #5 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
 #6 {main}
 ERROR - 2021-06-10 17:43:36 --> Duplicate entry 'Paper-2021-06-10' for key 'PRIMARY'
+CRITICAL - 2021-06-10 18:39:59 --> Call to undefined method App\Controllers\OrderLine::list_products()
+#0 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\OrderLine->create('11')
+#1 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderLine))
+#2 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-10 18:42:00 --> Undefined array key 0
+#0 C:\xampp\htdocs\app\Models\OrderLineModel.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\app\Controllers\OrderLine.php(41): App\Models\OrderLineModel->create_orderline('11', 'pap')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\OrderLine->create('11')
+#3 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderLine))
+#4 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-06-10 19:55:25 --> Duplicate entry 'Paper-2021-06-10' for key 'PRIMARY'
+CRITICAL - 2021-06-10 21:12:49 --> Undefined variable $pageTitle
+#0 C:\xampp\htdocs\app\Views\templates\header.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 33)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Order.php(72): view('templates/heade...')
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->updateStatus()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-10 21:13:21 --> Undefined variable $employee
+#0 C:\xampp\htdocs\app\Views\order\update_status.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('order/update_st...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Order.php(74): view('order/update_st...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->updateStatus()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-10 21:13:40 --> Undefined variable $employee
+#0 C:\xampp\htdocs\app\Views\order\update_status.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('order/update_st...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Order.php(74): view('order/update_st...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->updateStatus()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-10 21:14:16 --> Undefined variable $key
+#0 C:\xampp\htdocs\app\Views\order\update_status.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 10)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('order/update_st...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Order.php(74): view('order/update_st...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->updateStatus()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-10 21:14:51 --> Undefined variable $key
+#0 C:\xampp\htdocs\app\Views\order\update_status.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 10)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('order/update_st...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Order.php(74): view('order/update_st...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->updateStatus()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-10 21:43:09 --> Array to string conversion
+#0 C:\xampp\htdocs\app\Controllers\Order.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 84)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->updateStatus('12')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-10 21:44:00 --> Array to string conversion
+#0 C:\xampp\htdocs\app\Controllers\Order.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 84)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->updateStatus('12')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-10 21:44:26 --> Undefined variable $next_link
+#0 C:\xampp\htdocs\app\Views\templates\success_message.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 5)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('templates/succe...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Order.php(84): view('templates/succe...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->updateStatus('12')
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}

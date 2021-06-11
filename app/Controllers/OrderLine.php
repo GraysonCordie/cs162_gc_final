@@ -10,22 +10,12 @@ class OrderLine extends BaseController
     
     public function __construct(){
         $this->orderLineModel = new OrderLineModel();
-       //$this->orderLineFields = $this->orderLineModel->get_columnNames();
     }
-
-    /* public function view($seg1 = false){
-        $data['pageTitle'] = "View orders";
-        $orders = $this->orderModel->get_order($seg1);
-        $data['orders'] = $orders;
-
-        echo view('templates/header.php', $data);
-        echo view('order/view.php', $data);
-        echo view('templates/footer.php');
-    } */
 
     public function create($seg1 = false){
         $data['pageTitle'] = "Add Item";
         $data['orderid'] = $seg1;
+        $data['products'] = $this->orderLineModel->list_products();
     
         echo view('templates/header.php', $data);
     
@@ -47,6 +37,7 @@ class OrderLine extends BaseController
         }
         else{
             echo view('order_line/create.php', $data);
+            echo view('product/view', $data);
 
         }
         

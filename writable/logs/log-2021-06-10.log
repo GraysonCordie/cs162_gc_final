@@ -303,3 +303,41 @@ CRITICAL - 2021-06-10 21:44:26 --> Undefined variable $next_link
 #7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2021-06-10 23:36:36 --> Invalid file: home.php
+#0 C:\xampp\htdocs\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+#1 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('home', Array, true)
+#2 C:\xampp\htdocs\app\Controllers\Home.php(12): view('home')
+#3 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-10 23:36:48 --> Invalid file: home.php
+#0 C:\xampp\htdocs\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+#1 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('home', Array, true)
+#2 C:\xampp\htdocs\app\Controllers\Home.php(12): view('home')
+#3 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-10 23:37:55 --> Invalid file: home.php
+#0 C:\xampp\htdocs\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+#1 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('home', Array, true)
+#2 C:\xampp\htdocs\app\Controllers\Home.php(12): view('home')
+#3 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-10 23:39:18 --> Undefined variable $alert
+#0 C:\xampp\htdocs\app\Views\my_welcome_message.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('my_welcome_mess...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Home.php(12): view('my_welcome_mess...')
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}

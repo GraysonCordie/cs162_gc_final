@@ -1,0 +1,38 @@
+ERROR - 2021-06-11 21:09:14 --> Column count doesn't match value count at row 1
+ERROR - 2021-06-11 21:12:27 --> Duplicate entry 'Paper-14' for key 'PRIMARY'
+CRITICAL - 2021-06-11 21:21:13 --> Undefined property: mysqli::$name
+#0 C:\xampp\htdocs\app\Views\order\list_status.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('order/list_stat...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Order.php(89): view('order/list_stat...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->updateStatus('14')
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-11 21:23:36 --> Call to undefined method App\Models\OrderModel::get_status
+#0 C:\xampp\htdocs\app\Controllers\Order.php(70): CodeIgniter\Model->__call('get_status', Array)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->updateStatus('14')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-11 21:24:05 --> Attempt to read property "name" on string
+#0 C:\xampp\htdocs\app\Views\order\list_status.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\system\Common.php(1250): CodeIgniter\View\View->render('order/list_stat...', Array, true)
+#4 C:\xampp\htdocs\app\Controllers\Order.php(89): view('order/list_stat...', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->updateStatus('14')
+#6 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-11 21:28:52 --> Call to undefined method App\Models\OrderModel::get_statuses
+#0 C:\xampp\htdocs\app\Controllers\Order.php(70): CodeIgniter\Model->__call('get_statuses', Array)
+#1 C:\xampp\htdocs\system\CodeIgniter.php(931): App\Controllers\Order->updateStatus('14')
+#2 C:\xampp\htdocs\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#3 C:\xampp\htdocs\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}

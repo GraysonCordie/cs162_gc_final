@@ -6,7 +6,6 @@ use App\Models\OrderLineModel;
 class OrderLine extends BaseController
 {
     private $orderLineModel;
-    private $orderLineFields;
     
     public function __construct(){
         $this->orderLineModel = new OrderLineModel();
@@ -31,7 +30,7 @@ class OrderLine extends BaseController
     
             $data['message'] = $product . ' was added successfully.';
             $data['callback_link'] = '/orderline/create';
-            $data['next_link'] = '/orderline/create/' . $seg1;
+            $data['next_link'] = '/orderline/create/' . $orderid;
             echo view('templates/success_message.php', $data);
 
         }

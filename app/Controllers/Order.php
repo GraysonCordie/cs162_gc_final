@@ -67,6 +67,7 @@ class Order extends BaseController
         $data['pageTitle'] = 'Update Order Status';
         $order = $this->orderModel->get_order($seg1);
         $data['order'] = $order;
+        $data['statuses'] = $this->orderModel->get_status();
 
         echo view('templates/header.php', $data);
 
@@ -85,6 +86,7 @@ class Order extends BaseController
         }
         else{
             echo view('order/update_status.php', $data);
+            echo view('order/list_status', $data);
         }
 
         echo view('templates/footer.php');

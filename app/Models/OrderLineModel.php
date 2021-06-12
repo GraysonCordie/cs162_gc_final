@@ -19,9 +19,8 @@ class OrderLineModel extends OrderModel
     }
 
     public function create_orderline($orderid, $product){
-        $date = $this->get_order($orderid)[0]->order_date;
 
-        $sql = "INSERT INTO order_line (product_name, order_id, order_date) VALUES ('".$product."', '".$orderid."', '".$date."')";
+        $sql = "INSERT INTO order_line (product_name, order_id) VALUES ('".$product."', '".$orderid."')";
         $this->db->query($sql);
     }
 

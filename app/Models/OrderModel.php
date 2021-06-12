@@ -57,6 +57,12 @@ class OrderModel extends Model
         return $this->db->getFieldNames($this->table);
     }
 
+    public function get_status(){
+        $sql = "SELECT * FROM status";
+        $query = $this->db->query($sql);
+        return $query->getResult();
+    }
+
     public function update_status($orderId, $status){
         $sql = "UPDATE ".$this->table." SET order_status='$status' WHERE order_id='$orderId'";
         $this->db->query($sql);

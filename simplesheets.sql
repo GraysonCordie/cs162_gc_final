@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2021 at 05:15 AM
+-- Generation Time: Jun 12, 2021 at 04:32 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -95,8 +95,7 @@ CREATE TABLE `orders` (
 
 CREATE TABLE `order_line` (
   `product_name` varchar(20) NOT NULL,
-  `order_id` int(11) NOT NULL,
-  `order_date` date NOT NULL
+  `order_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -117,6 +116,7 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`product_name`, `description`, `quantity_on_hand`, `quantity_on_hold`) VALUES
+('Big Paper', 'Paper that is Big.', 0, 0),
 ('Paper', 'A piece of paper.', 50, 0);
 
 -- --------------------------------------------------------
@@ -191,7 +191,7 @@ ALTER TABLE `orders`
 -- Indexes for table `order_line`
 --
 ALTER TABLE `order_line`
-  ADD PRIMARY KEY (`product_name`,`order_date`),
+  ADD PRIMARY KEY (`product_name`,`order_id`) USING BTREE,
   ADD KEY `order_line_order` (`order_id`);
 
 --
@@ -223,19 +223,19 @@ ALTER TABLE `status`
 -- AUTO_INCREMENT for table `address`
 --
 ALTER TABLE `address`
-  MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Constraints for dumped tables
